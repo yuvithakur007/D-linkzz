@@ -55,4 +55,4 @@ async function handleDownload(req, res) {
   res.download(file.path, file.originalName)
 }
 
-app.listen("https://i-share-six.vercel.app/")
+app.listen(process.env.PORT)
